@@ -1,0 +1,200 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+  .nawbar-menu
+    flex-direction: column
+  
+  .media-icon
+    font-size: 35px
+     
+// ≥768px
++media-breakpoint-down(sm)
+  .nawbar-menu
+    flex-direction: column
+    
+  .nawbar-menu
+    .menu
+      ul
+        flex-direction: column
+        align-self: start
+        display: none
+        
+  .logo
+    display: none 
+    
+  .nawbar-menu
+    menu 
+      ul 
+        li
+          margin: 5px 
+          
+  .menu-triger
+    display: block
+  
+  .media-icon
+    font-size: 25px
+     
+
+// ≥576px
++media-breakpoint-down(xs)
+  .nawbar-menu
+    display: flex
+    flex-direction: column
+    
+  .nawbar-menu
+    .menu
+      margin: 0
+      padding: 0 
+      ul
+        flex-direction: column 
+        align-self: start
+        padding-inline-start: 0
+      
+  .nawbar-menu
+    .munu 
+      ul 
+        li
+          margin: 5px 
+          
+  .menu-triger
+    display: block
+  .form-content
+    margin-top: 70px
+  .social-media
+    padding: 0
+
+  .block-form
+	  display: flex
+	  justify-content: center
+  
+  .content-info
+    width: 100%
+    height: auto
+    display: flex
+    justify-content: center
+    flex-direction: column
+  
+  .logo-content
+    display: flex
+    justify-content: center
+
+  .button
+    width: 100%
+    display: flex
+    justify-content: center
+
+  .media-content
+    width: 100%
+    margin: 7px
+    padding: 10px
+
+  .media-icon
+    display: flex
+    justify-content: center
+    font-size: 17px
+
+  .tabs
+    margin-top: 30px
+    padding-bottom: 90px
+
+  .tabs .content.visible
+    padding: 0
+
+  .tabs-media
+    display: flex
+    flex-direction: column
+    height: 100%
+    
+  .tabs nav a
+    padding: 30px
+    font-size: 15px
+
+  .content-tab
+    background-color: #D0FF92
+    font-size: 12px
+  
+  .tabs-image
+    display: flex
+    justify-content: center
+    padding-top: 5px
+    padding-bottom: 30px
+  
+  .sublistsection
+    padding-top: 100px
+    padding-bottom: 100px
+
+  .sublistsection-content
+    padding-top: 100px
+    padding-bottom: 100px
+  
+  .awesome-block
+	  padding-top: 20px
+	  padding-bottom: 50px
+
+  .parcing-block2
+	  padding-top: 10px
+	  padding-bottom: 20px
+
+  .customers
+	  padding-top: 80px
+
+  .block-info
+	  padding: 10px 20px 10px 20px
+  
+  .block-autor
+    padding-top: 20px
+    padding-bottom: 50px
+  
+  .contact-us
+    padding-left: 20px
+    padding-right: 20px
+  
+  .contact-mesenger
+    width: 100%
+    display: flex
+    justify-content: center
+    input
+      padding: 20px
+      width: 80%
+
+  .btm-4
+  	padding-top: 40px
+  	padding-bottom: 40px
+  	text-align: center
+
+  .stylish
+    padding-left: 20px
+    padding-right: 20px
+     
+    
+  
+/*==========  Mobile First  ==========*/
+
+  
+
+// ≤576px
++media-breakpoint-up(sm)
+  
+// ≤768px
++media-breakpoint-up(md)
+  .btm-4
+    margin-top: 40px
+  
+  .tabs
+    padding-bottom: 70px
+  
+  .menu ul li
+    padding: 0
+     
+// ≤992px
++media-breakpoint-up(lg)
+  
+// ≤1200px
++media-breakpoint-up(xl)

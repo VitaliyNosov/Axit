@@ -1,0 +1,702 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+//////////////////////////   My style     //////////////////////////////////////
+
+.content
+	background-size: cover
+	background-attachment: fixed 
+	background-repeat: no-repeat
+	background-position: center center
+	
+.container-fluid
+	margin: 0
+	padding: 0
+	background-color: #ffffff
+	border-bottom: 1px solid #cccccc
+.fluid-tabs
+	background-color: #f5f5f5
+
+.fluid-sublistsection
+	background-color: #f5f5f5
+
+.fluid-pricing
+	background-color: #f5f5f5
+
+
+.wrapper
+	main-width: 1400px
+	height: inherit
+	background-color: #000000
+	margin: 0 auto
+	overflow: hidden 
+
+// navbar-menu section
+
+.nawbar-menu
+	background-color: #000000
+	padding-top: 10px
+	padding-bottom: 10px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	ul 
+		display: flex
+		list-style: none
+		margin: 0	
+		li 
+			margin: 10px 
+			margin-left: 15px
+			padding-left: 15px  	
+			a 
+				text-transform: uppercase
+				text-decoration: none
+				font-size: 12px
+				color: #ffffff
+				&:hover
+					color: #D4732E
+					text-decoration: none
+
+/// icon in adaptive
+
+.menu-triger
+	text-align: center
+	text-transform: uppercase
+	text-decoration: none
+	font-size: 20px
+	font-weight: bold
+	color: #ffffff
+	padding-top: 10px
+	padding-bottom: 10px
+	display: none
+	&:hover
+		color: #FF9B51
+
+
+.content
+	padding-bottom: 110px
+  background-size: cover
+  background-position: center
+  position: relative
+  align-content: center
+	background-color: #000000
+
+// header-content section
+
+.header-content
+	padding-top: 120px
+	p 
+		color: #ffffff
+	h1 
+		font-family: Raleway
+		text-transform: uppercase
+		font-size: 36px
+		color: #ffffff
+		margin-top: 60px
+		
+
+
+.btn-download
+	display: inline-block
+	padding: 10px 35px
+	font-size: 16px
+	color: #ffffff
+	text-align: center
+	text-decoration: none
+	background-color: none
+	border: 2px solid #ffffff
+	margin-top: 20px
+	&:hover
+		border: 2px solid #FF9B51
+		text-decoration: none
+		color: #FF9B51
+
+
+.block-form
+	max-width: 100%
+	height: auto
+	display: flex
+	justify-content: flex-end
+	align-items: center
+
+.form-container
+	max-width: 374px
+	height: auto
+	
+.form-content
+	width: 100%
+	border-radius: 5px
+	background-color: #ffffff
+	 
+.form
+	max-width: 100%
+	border-top-left-radius: 5px
+	border-top-right-radius: 5px
+	font-size: 20px
+	color: #333333
+	padding: 10px 50px 10px 50px
+	text-align: center
+	background-color: #f5f5f5
+	strong 
+		color: #ff8b38
+.form-item
+	display: flex
+	justify-content: center
+	color: #D3D3D3
+	border: none
+	z-index: 1
+	input
+		width: 80%
+		padding: 20px
+		background-color: transparent
+		border: none
+		border-bottom: 1px solid #D3D3D3
+		outline: none
+			
+.container-form
+	width: 100%
+	margin-top: 20px
+	background-color: #ff9b51
+	text-align: center
+	border-bottom-left-radius: 5px
+	border-bottom-right-radius: 5px
+	
+.form-active
+	width: 100%
+	display: inline-block
+	padding: 20px 
+	a 
+		color: #ffffff 
+		&:hover
+			text-decoration: none
+			color: #31312f
+	
+// social-media section
+
+.social-media
+	padding-top: 10px
+	padding-bottom: 10px
+	background-color: #ffffff
+	p 
+		color: #86878b
+		font-size: 14px
+	
+.media-icon
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	font-size: 48px
+	color: #cccccc	
+	i 
+		padding: 15px
+		&:hover
+			color: #FF9B51
+
+// tabs-media section
+		
+.tabs-content
+	display: flex
+	justify-content: flex-end
+	align-items: center	
+	z-index: 1
+	
+.tabs-image
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	padding-top: 150px
+	padding-bottom: 150px
+
+// Tabs style
+
+.tabs-content
+	h3 
+		color: #000000
+	p 
+		color: #8D8E92
+
+.tabs 
+  margin: 0px 20px
+  position: relative
+  background: #F5F5F5
+  width: 100%
+  
+.tabs nav 
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+  background: #333333
+  color: #ffffff
+  width: 100px
+  
+.tab
+	border: 1px solid #F5F5F5
+
+.tabs nav a 
+  padding: 35px 0px
+  text-align: center
+  width: 100%
+  cursor: pointer
+
+.tabs nav a:hover,
+.tabs nav a.selected 
+  background: #ff8b38
+  color: #ffffff
+
+.tabs .content 
+  padding: 20px 0px
+  position: absolute
+  top: 0px
+  left: 150px
+  background-color: #F5F5F5
+  color: #6C5D5D
+  width: 0px
+  height: 100%
+  overflow: hidden
+  opacity: 0
+
+.tabs .content.visible 
+  padding: 20px
+  width: calc(100% - 150px)
+  opacity: 1
+	
+.tabs .content p
+	 padding-bottom: 2px
+
+.tabs .content p:last-of-type
+	 padding-bottom: 0px
+	
+.btm-tab
+	padding-top: 10px
+	a 
+		padding: 10px 20px
+		background-color: #ff8b38
+		color: #ffffff
+		border-radius: 3px
+		text-decoration: none 
+		&:hover
+			background-color: #000000
+			color: #FF8B38	
+
+// sublistsection section
+
+.sublistsection
+	display: flex
+	justify-content: space-between
+	align-self: center
+
+// sublistsection-content section
+
+.sublistsection-content
+	padding-top: 155px
+	padding-bottom: 155px
+	p 
+		margin-top: 50px
+		color: #86878b	
+
+.sublistsection
+	padding-top: 155px
+	padding-bottom: 155px
+	display: flex
+	justify-content: space-between
+
+.sublistsection-info
+	p 
+		color: #86878b
+
+.section-info
+	p 
+		color: #86878b
+		font-size: 14px
+	.info-title
+		display: flex
+		justify-content: flex-start
+		align-items: flex-start
+		margin-right: 0
+		h3
+			margin-left: 15px
+
+			
+	.orang-border
+		width: 40px
+		height: 40px
+		border: 2px solid #FF9B51
+		background-color: 
+		border-radius: 50px
+		display: flex
+		justify-content: center
+		align-items: center
+		i 
+			color: #FF9B51
+			font-size: 16px
+
+// content-awesome section
+
+.content-awesome
+	padding-top: 100px
+	text-align: center
+	p 
+		color: #86878b
+	
+.awesome-colum
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: space-between
+
+.awesome-block
+	padding-top: 50px
+	padding-bottom: 150px
+	text-align: center
+	p 
+		color: #86878b
+		font-size: 14px
+	.block-icon
+		display: flex
+		justify-content: center
+		padding-bottom: 35px	
+.icon
+	width: 40px
+	height: 40px
+	border: 2px solid #FF9B51
+	border-radius: 50px
+	display: flex
+	justify-content: center
+	align-items: center
+	i 
+		color: #FF9B51
+		font-size: 16px
+	
+// content-pricing section
+
+.content-pricing
+	padding-top: 100px
+	text-align: center 
+	p
+		color: #86878b
+		font-size: 14px 
+
+.parcing-block
+	padding-top: 120px
+	padding-bottom: 100px
+
+.parcing-block2
+	padding-top: 80px
+	padding-bottom: 100px
+
+.block-header
+	max-width: 100%
+	background-color: #333333
+	color: #ffffff
+	text-align: center
+	font-size: 20px
+	border-bottom: 1px solid #ffffff
+	padding-top: 5px
+	padding-bottom: 5px
+
+.block-content
+	min-width: 100%
+	background-color: #333333
+	color: #ffffff
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 40px
+	border-bottom: 4px solid #ff8b38
+
+.block-content2
+	min-width: 100%
+	background-color: #333333
+	color: #ffffff
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 40px
+	border-bottom: 44px solid #ff8b38
+	
+.block-contenttext
+	background-color: #ffffff
+	color: #86878b
+.p
+	width: 100%
+	height: auto
+	font-size: 16px
+	padding-top: 15px
+	padding-bottom: 5px
+	display: flex
+	justify-content: center
+	align-items: center
+	border-bottom: 1px solid #D3D5DB
+			
+// custumers section
+
+.customers
+	padding-top: 120px
+	text-align: center
+	p 
+		font-size: 14px
+		color: #86878b
+	
+.autor
+	padding-top: 80px
+
+.block-info
+	background-color: #f5f5f5
+	font-size: 14px
+	padding: 20px 40px 20px 40px
+	color: #86878b
+
+.block-autor
+	man-width: 100% 
+	padding-top: 50px
+	padding-bottom: 150px
+	display: flex
+	justify-content: flex-start
+	align-items: flex-center
+	
+.position
+	padding-left: 10px
+	p 
+		font-size: 14px
+		color: #86878b
+
+// stylish section
+
+.stylish
+	background-color: #000000
+  background-size: cover
+  background-position: center
+	text-align: center
+	color: #ffffff
+	padding-top: 100px
+	padding-bottom: 54px
+	p 
+		font-size: 14px
+		color: #F0F2F9
+
+// contact-us section
+
+.contact-us
+	background-color: #ffffff
+	text-align: center
+	padding-top: 120px
+
+.contact-mesenger
+	z-index: 100000
+	width: 92%
+	input
+		width: 100%
+		border: none
+		border-bottom: 1px solid #D3D3D3
+		outline: none
+		padding: 156px 0px 20px 0px
+
+.btm-form
+	padding-top: 60px
+	padding-bottom: 60px
+	text-align: center
+	a 
+		padding: 10px 20px
+		background-color: #ff8b38
+		color: #ffffff
+		border-radius: 5px
+		text-decoration: none 
+		&:hover
+			background-color: #000000
+			color: #FF8B38
+
+// footer section	 	
+
+.footer
+	background-color: #000000
+	color: #cccccc
+	text-align: center
+	font-size: 24px
+	padding-top: 20px
+	padding-bottom: 10px
+	p 
+		font-size: 14px
+		padding-top: 5px
+		&:hover
+			color: #ff8b38
+	i 
+		margin-left: 20px
+		&:hover
+			color: #ff8b38
+	li
+		list-style-type: none
+	a
+		text-decoration: none 
+		font-size: 16px
+		color: #ffffff
+		&:hover
+			color: #FF8B38
+
+
+@import "media" // Always at the end
+
+@media (min-width: 576px) and (max-width: 767px)
+
+  .nawbar-menu
+    display: flex
+    flex-direction: column
+    
+  .nawbar-menu
+    .menu
+      margin: 0
+      padding: 0 
+      ul
+        flex-direction: column 
+        align-self: start
+        padding-inline-start: 0
+      
+  .nawbar-menu
+    .munu 
+      ul 
+        li
+          margin: 5px 
+          
+  .menu-triger
+    display: block
+  .form-content
+    margin-top: 70px
+  .social-media
+    padding: 0
+
+  .block-form
+	  display: flex
+	  justify-content: center
+  
+  .content-info
+    width: 100%
+    height: auto
+    display: flex
+    justify-content: center
+    flex-direction: column
+  
+  .logo-content
+    display: flex
+    justify-content: center
+
+  .button
+    width: 100%
+    display: flex
+    justify-content: center
+
+  .media-content
+    width: 100%
+    margin: 7px
+    padding: 10px
+
+  .media-icon
+    display: flex
+    justify-content: center
+    font-size: 17px
+
+  .tabs
+    margin-top: 30px
+    padding-bottom: 90px
+
+  .tabs .content.visible
+    padding: 0
+
+  .tabs-media
+    display: flex
+    flex-direction: column
+    height: 100%
+    
+  .tabs nav a
+    padding: 30px
+    font-size: 15px
+
+  .content-tab
+    background-color: #D0FF92
+    font-size: 12px
+  
+  .tabs-image
+    display: flex
+    justify-content: center
+    padding-top: 5px
+    padding-bottom: 30px
+  
+  .sublistsection
+    padding-top: 100px
+    padding-bottom: 100px
+
+  .sublistsection-content
+    padding-top: 100px
+    padding-bottom: 100px
+  
+  .awesome-block
+	  padding-top: 20px
+	  padding-bottom: 50px
+
+  .parcing-block2
+	  padding-top: 10px
+	  padding-bottom: 20px
+
+  .customers
+	  padding-top: 80px
+
+  .block-info
+	  padding: 10px 20px 10px 20px
+  
+  .block-autor
+    padding-top: 20px
+    padding-bottom: 50px
+  
+  .contact-us
+    padding-left: 20px
+    padding-right: 20px
+  
+  .contact-mesenger
+    width: 100%
+    display: flex
+    justify-content: center
+    input
+      padding: 20px
+      width: 80%
+
+  .btm-4
+  	padding-top: 40px
+  	padding-bottom: 40px
+  	text-align: center
+
+  .stylish
+    padding-left: 20px
+    padding-right: 20px
+
+		
