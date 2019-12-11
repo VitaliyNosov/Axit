@@ -45,3 +45,7 @@ $(document).ready(function () {
 	});
 });
 
+
+/// My IE Polifil
+
+flexibility(document.documentElement);
