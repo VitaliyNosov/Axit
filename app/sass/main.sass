@@ -42,7 +42,8 @@ b, strong
 	background-color: #ffffff
 	border: none
 	height: 1px
-	margin-left: 0
+	margin-left: 0px
+	display: inline-block
 
 .white-center
 	width: 50px
@@ -50,14 +51,15 @@ b, strong
 	border: none
 	height: 1px
 	align-items: center
-
+	display: inline-block
 
 .orange-left
 	width: 50px
 	background-color: #FF8B38
 	border: none
 	height: 1px
-	margin-left: 0
+	margin-left: 0px
+	display: inline-block
 
 .orange-center
 	width: 50px
@@ -65,6 +67,7 @@ b, strong
 	border: none
 	height: 1px
 	align-items: center
+	display: inline-block
 //  content style
 
 .content
@@ -204,6 +207,7 @@ b, strong
 	background-color: #f5f5f5
 	strong 
 		color: #ff8b38
+
 .form-item
 	display: flex
 	justify-content: center
@@ -285,14 +289,15 @@ b, strong
   position: relative
   background: #F5F5F5
   width: 100%
-  
-.tabs nav 
-  display: flex
-  flex-wrap: wrap
-  align-items: stretch
-  background: #333333
-  color: #ffffff
-  width: 100px
+
+.tabs nav
+	display: flex
+	flex-wrap: wrap
+	align-items: stretch
+	background: #333333
+	color: #ffffff
+	width: 100px
+
   
 .tab
 	border: 1px solid #F5F5F5
@@ -544,15 +549,38 @@ b, strong
 	text-align: center
 	padding-top: 120px
 
-.contact-mesenger
-	z-index: 100000
-	width: 92%
+.form-item2
+	display: flex
+	justify-content: center
+	color: #D3D3D3
+	border: none
+	z-index: 1
 	input
-		width: 100%
+		width: 80%
+		padding: 20px
+		background-color: transparent
 		border: none
 		border-bottom: 1px solid #D3D3D3
 		outline: none
-		padding: 156px 0px 20px 0px
+
+.mesenger-input
+	width: 80%
+	height: auto
+	border-bottom: 1px solid #D3D3D3
+	display: flex
+	align-items: flex-end
+
+
+.contact-mesenger
+	width: 100%
+	input
+		width: 100%
+		border: none
+		display: inline-block
+		flex: 1 1 auto
+		outline: none
+		padding: 20px
+		
 
 .btm-form
 	padding-top: 60px

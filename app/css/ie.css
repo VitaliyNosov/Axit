@@ -1,0 +1,8 @@
+.tabs nav{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	background: #3AE2CE;
+	color: #ffffff;
+  width: 100px;
+}
